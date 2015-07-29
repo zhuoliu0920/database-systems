@@ -1,0 +1,30 @@
+Table	Form	Y_N	Reason
+case01	3NF	N	Not 1NF
+case01	BCNF	N	Not 1NF
+
+case02	3NF	N	Not 2NF
+case02	BCNF	N	Not 2NF
+
+case03	3NF	N	?
+case03	BCNF	N	?
+
+case04	3NF	Y	?
+case04	BCNF	N	?
+
+case05	3NF	N	?
+case05	BCNF	N	?
+
+case06	3NF	N	?
+case06	BCNF	Y	?
+
+case07	3NF	N	?
+case07	BCNF	Y	?
+
+case08	3NF	N	?
+case08	BCNF	Y	?
+
+case09	3NF	Y	?
+case09	BCNF	N	?
+
+case10	3NF	N	?
+case10	BCNF	Y	?

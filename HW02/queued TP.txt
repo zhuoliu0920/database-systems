@@ -1,0 +1,7 @@
+Let¡¯s look at how the queued TP model works in the context of a transaction from a server¡¯s perspective. As in our description of direct TP in previous chapters, we will assume that each request is asking for just one transaction to be executed. In the queued TP model, the server program starts a transaction and dequeues the next request from the request queue (see Figure 4.4). The server then does the work that the request is asking for, enqueues the reply to the reply queue, and commits.
+
+FIGURE 4.4 Managing a Queued Request within a Transaction. The request is dequeued and the reply enqueued within a transaction. If the transaction aborts, the request isn¡¯t lost.
+
+Since these queues are transactional resources, if the transaction aborts, the dequeue operation that receives the request is undone, thereby returning the input request to the request queue. If the abort happens at the very end, then the enqueue operation to the reply queue also is undone, thereby wiping out the reply from the reply queue. Therefore, whenever the client checks the queues, either the request is in the request queue, the reply is in the reply queue, or the request can¡¯t be checked because it is currently being processed. In any case, there¡¯s never any ambiguity as to the request¡¯s state. It either has not yet been processed, is in the midst of being processed, or has been completed.
+
+Principles of Transaction Processing, 2nd Edition

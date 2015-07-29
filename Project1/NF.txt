@@ -1,0 +1,17 @@
+Table Form Y_N Reason
+T8 3NF Y  
+T8 BCNF Y  
+T7 3NF Y  
+T7 BCNF Y  
+T6 3NF N not 1NF,some attributes do not exist 
+T6 BCNF N not 3NF 
+T5 3NF N not 2NF,A4->A5 
+T5 BCNF N not 3NF 
+T4 3NF N not 1NF,NULL in keys  
+T4 BCNF N not 3NF 
+T3 3NF N not 1NF,duplicate keys  
+T3 BCNF N not 3NF 
+T2 3NF N not 2NF,A1->A3 
+T2 BCNF N not 3NF 
+T1 3NF Y  
+T1 BCNF N A1,A2->K1 

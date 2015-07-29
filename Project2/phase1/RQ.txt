@@ -1,0 +1,13 @@
+"from" "to" "distance"
+Beijing Shanghai 10 
+Hongkong Houston 7000 
+Houston Beijing 8000 
+Shanghai Hongkong 2000 
+Beijing Hongkong 2010 
+Hongkong Beijing 15000 
+Houston Shanghai 8010 
+Shanghai Houston 9000 
+Beijing Houston 9010 
+Hongkong Shanghai 15010 
+Houston Hongkong 10010 
+Shanghai Beijing 17000 

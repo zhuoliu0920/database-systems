@@ -1,0 +1,6 @@
+ARE 1
+HOW 1
+OLD 1
+ONE 2
+THREE 1
+TWO 1

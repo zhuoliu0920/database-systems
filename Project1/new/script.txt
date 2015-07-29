@@ -1,0 +1,13 @@
+case01(K1(k), K2(k), A1)
+case02(K1(k), K2(k), A1)
+case03(K1(k), K2(k), A1, A2)
+case04(K1(k), K2(k), A1)
+case05(K1(k), K2(k), A1, A2, A3)
+case06(A0, K1(k), A1, A2, A3)
+case07(K1(k), K2(k), A1, A2)
+case08(K1(k), K2(k), A1, A2)
+case09(K1(k), K2(k), A1, A2, A3)
+case10(K1(k), K2(k), A1, A2);
+T8(K1(k),A1);
+T7();
+T10(K1(k),A1);

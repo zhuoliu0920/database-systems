@@ -1,0 +1,20 @@
+Generally, timestamping is superior in situations where either most transactions
+are read-only, or it is rare that concurrent transactions will try to read and
+write the same element. In high-conflict situations, locking performs better.
+The argument for this rule-of-thumb is:
+
+Locking will frequently delay transactions as they wait for locks.
+
+But if concurrent transactions frequently read and write elements in common,
+then rollbacks will be frequent in a timestamp scheduler, introducing
+even more delay than a locking system.
+
+There is an interesting compromise used in several commercial systems. The
+scheduler divides the transactions into read-only transactions and read/write
+transactions. Read/write transactions are executed using two-phase locking, to
+keep all transactions from accessing the elements they lock.
+Read-only transactions are executed using multiversion timestamping. As
+the read/write transactions create new versions of a database element, those
+versions are managed as in Section 18.8.5. A read-only transaction is allowed to
+read whatever version of a database element is appropriate for its timestamp. A
+read-only transaction thus never has to abort, and will only rarely be delayed.

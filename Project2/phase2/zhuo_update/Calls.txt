@@ -1,0 +1,3 @@
+java rq E=SampleGraph;i=a;j=b;v=value;k=12
+
+java rq E=routes;i=origin;j=destination;v=price;k=2

@@ -1,0 +1,26 @@
+Table Form Y_N Reason
+case01 3NF N not 1NF,duplicate keys  
+case01 BCNF N not 3NF 
+case02 3NF N not 1NF,NULL in keys  
+case02 BCNF N not 3NF 
+case03 3NF N not 2NF,K2->A2 
+case03 BCNF N not 3NF 
+case04 3NF N not 2NF,K1->A1 
+case04 BCNF N not 3NF 
+case05 3NF N not 2NF,K2->A1 
+case05 BCNF N not 3NF 
+case06 3NF N A3->A0 
+case06 BCNF N not 3NF 
+case07 3NF N A2->A1 
+case07 BCNF N not 3NF 
+case08 3NF N A2->A1 
+case08 BCNF N not 3NF 
+case09 3NF N not 2NF,K1->A1 
+case09 BCNF N not 3NF 
+case10 3NF Y  
+case10 BCNF N A1,A2->K1 
+T8 3NF N not 1NF,some attributes do not exist 
+T8 BCNF N not 3NF 
+T7 1NF N Table does not have columns 
+T10 3NF N not 1NF,table does not exist 
+T10 BCNF N not 3NF 

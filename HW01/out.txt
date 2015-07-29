@@ -1,0 +1,7 @@
+AND 1
+BAD 1
+GOOD 1
+HOLD 1
+ME 1
+SHE 1
+YOU 7
